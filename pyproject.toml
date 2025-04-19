@@ -10,6 +10,9 @@ requires-python = ">=3.11"
 dependencies = [
     "huanzhi-utils",
     "scikit-learn",
+    "datasets",
+    "python-dotenv",
+    "openai",
     "torch",
     "setuptools",
     "deepspeed==0.16.3",
