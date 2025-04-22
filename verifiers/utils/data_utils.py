@@ -106,8 +106,8 @@ def format_bfcl_prompt(system_prompt: str | None = None, involved_classes: List[
 
 def preprocess_bfcl_dataset(system_prompt: str | None = None, curriculum_learning: bool = False) -> Dataset:
     # TODO: Change to local path
-    multi_turn_base_data = load_file("/root/richard/test/verifiers/verifiers/berkeley-function-call-leaderboard/data/BFCL_v3_multi_turn_base.json")
-    multi_turn_base_answer = load_file("/root/richard/test/verifiers/verifiers/berkeley-function-call-leaderboard/data/possible_answer/BFCL_v3_multi_turn_base.json")
+    multi_turn_base_data = load_file("verifiers/berkeley-function-call-leaderboard/data/BFCL_v3_multi_turn_base.json")
+    multi_turn_base_answer = load_file("verifiers/berkeley-function-call-leaderboard/data/possible_answer/BFCL_v3_multi_turn_base.json")
 
     # Reprocess the columns into serializable format and add num_turns
     for i in range(len(multi_turn_base_data)):
