@@ -6,7 +6,7 @@ authors = [
 version = "0.1.0"
 description = "Verifiers for reinforcement learning with LLMs"
 license = {text = "MIT"}
-requires-python = ">=3.11"
+requires-python = "==3.12.2"
 dependencies = [
     "huanzhi-utils",
     "scikit-learn",
